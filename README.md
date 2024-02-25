@@ -37,5 +37,3 @@ This project is licensed under the [MIT License](LICENSE).
 ## Acknowledgements
 
 - [Project Euler](https://projecteuler.net/) for providing the challenging problems.
-- [GitHub Copilot](https://copilot.github.com/) for assisting in generating this README.md file.
-

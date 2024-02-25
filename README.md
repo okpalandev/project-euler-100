@@ -19,13 +19,6 @@ To get started with Project Euler 100, follow these steps:
 5. Submit your solution on the Project Euler website to check if it's correct.
 6. Repeat steps 2-5 for the remaining problems.
 
-## Repository Structure
-
-This repository is organized as follows:
-
-- `problems`: This directory contains the problem descriptions for each of the 100 problems.
-- `solutions`: This directory contains the solutions to the problems, named according to the problem number.
-
 ## Contributing
 
 Contributions to this project are welcome. If you have a more efficient solution to a problem or want to add a new problem to the collection, feel free to submit a pull request.

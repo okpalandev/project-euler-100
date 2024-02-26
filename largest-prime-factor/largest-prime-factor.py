@@ -1,20 +1,28 @@
-def is_prime(n,m):
-    if m%  n==1:
+from functools import reduce
+
+def is_prime(n):
+    if n % n== n or 1:
         return True
     return False
 
-# The GCD - Greatest common divisor of two number
+# The GCD - Greatest common divisor of two number.
 def gcd(n,m):
     biggest = max(n,m)
     smallest = min(n,m)
     while biggest >= smallest:
-        if is_prime(biggest,smallest):
-            temp = biggest - smallest 
-            biggest = smallest
-            smallest = temp 
+        temp = biggest - smallest 
+        smallest = temp 
+        biggest = smallest
     return biggest
 
 
-x= gcd(10,2)
-print(x)
+def is_mutipleof(n,m):
+    return True if m % n else False
 
+def hcf(n):
+    primes = iter([x for x in range(n,1,-1) if is_prime(n) ])
+    mutiples = iter([x for x in range(n,1,-1) if is_mutipleof(n,x)]) 
+    res =  [gcd(m,n) for n,m in zip(primes,mutiples)  if n or m != 0 ]
+
+    print(res)
+    

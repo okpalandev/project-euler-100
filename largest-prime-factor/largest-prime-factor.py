@@ -26,3 +26,8 @@ def hcf(n):
 
     print(res)
     
+    return reduce(lambda x,y: x*y, res)
+
+
+
+
